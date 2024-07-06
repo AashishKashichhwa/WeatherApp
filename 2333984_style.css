@@ -1,0 +1,239 @@
+/* Name:- Aashish Kashichhwa */
+/* University Id = 2333984  */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background:url(background.jpg);
+    color: white;
+}
+
+.weather_app{
+text-align: center;
+background-color:rgb(48, 48, 48) ;
+margin: 50px auto 0;
+padding: 20px 35px;
+border-radius: 20px;
+height: 500px;
+width: 90%;
+max-width: 470px;
+}
+
+header h1{
+    margin-bottom: 10px;
+}
+
+header h3{
+    padding-bottom: 5px;
+}
+.search{
+    width: 100%;
+    display: flex;
+}
+
+.searcharea #searchbox{
+    color: black;
+    padding: 10px 25px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    border: 0px;
+    outline: 0;
+}
+
+button{
+    border: 0px;
+    font-weight: 20px;
+    
+    outline: 0;
+    border-radius: 5px;
+    /* background-color: rgb(19, 170, 14); */
+    padding: 2px;
+    cursor: pointer;
+    height: 30px;
+    width: 15%;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+.weatherimg{
+    height: 100px;
+
+}
+
+.temperature{
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+}
+
+#thermometer{
+    height: 40px;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+#address{
+    height: 40px;
+    width: 8%;
+}
+.location h2{
+    padding: 6px;
+}
+
+.weatherCondition{
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.weatherdescr{
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    font-size:13px ;
+    margin-bottom: 20px;
+}
+
+.humidity{
+    display: flex;
+
+}
+.windspeed{
+    display: flex;
+
+}
+
+#humidityIcon{
+    height: 35px;
+    width: 40px;
+    margin-right: 20px;
+
+}
+
+
+#windspeedIcon{
+    height: 40px;
+    padding-right: 10px;
+}
+
+.error{
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    margin-top: 3px;
+    display: none;
+}
+
+@media screen and (max-width: 520px) {
+    .searcharea #searchbox{
+        width: 220px;
+        font-size: 13px;
+    }
+    button{
+        font-size: 13px;
+
+    }
+}
+@media screen and (max-width: 440px) {
+    .weather_app{
+        height: auto;
+    }
+
+    .weatherimg{
+        height: 120px;
+    }
+
+    button{
+        font-size: 12px;
+        width: auto;
+    }
+
+    .temperature{
+        margin: 5px;
+        font-size: px;
+    }
+    
+    #thermometer{
+        height: 35px;
+    }
+    
+    .location{
+        margin-bottom: 5px;
+    }
+    
+    #address{
+        height: 35px;
+    }
+
+    .location h2{
+        padding: 6px;
+    }
+
+    .weatherdescr{
+        font-size: 12px;
+    }
+
+    #humidityIcon{
+        width: 40px;
+        padding-right: 10px;
+    }
+
+    
+    #windspeedIcon{
+        width: 60px;
+        padding-left: 10px;
+        padding-right: 15px;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 386px) {
+    button{
+        margin-top: 5px;
+    
+    }
+}
+
+
+@media screen and (max-width: 335px) {
+    .searcharea #searchbox{
+        width: 180px;
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 240px) {
+    .weatherdescr{
+        display: block;
+        
+    }
+    .humidity{
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .searcharea #searchbox{
+        width: 120px;
+        font-size: 10px;
+    }
+    button{
+        width: 35px;
+        font-size: 9px;
+    }
+}
+
